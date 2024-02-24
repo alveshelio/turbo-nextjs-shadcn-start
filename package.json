@@ -12,7 +12,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
+    "@umontreal/eslint-config": "workspace:*",
     "prettier": "^3.1.1",
     "turbo": "latest"
   },

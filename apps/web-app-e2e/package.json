@@ -1,0 +1,21 @@
+{
+  "name": "web-app-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev:test": "playwright test",
+    "e2e:test": "start-server-and-test \"(cd ../web-app/ && pnpm run start)\" http://localhost:3000 \"playwright test\""
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.20"
+  },
+  "dependencies": {
+    "start-server-and-test": "^2.0.3",
+    "web-app": "workspace:*"
+  }
+}
