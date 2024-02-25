@@ -5,6 +5,13 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/api/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/web-app-e2e/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/web-app-e2e/playwright-report" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/web-app-e2e/test-results" />
+      <excludeFolder url="file://$MODULE_DIR$/apps/web-app/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ui/.turbo" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
