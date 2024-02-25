@@ -1,5 +1,5 @@
 {
-  "name": "with-docker",
+  "name": "umontreal-starter-kit",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,9 @@
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "e2e:dev": "turbo run dev:test",
+    "e2e:ci": "turbo run e2e:test"
   },
   "dependencies": {},
   "devDependencies": {
@@ -17,7 +19,7 @@
     "turbo": "latest"
   },
   "engines": {
-    "node": ">=14.0.0",
+    "node": ">=20.0.0",
     "npm": ">=7.0.0"
   },
   "packageManager": "pnpm@8.15.3"
