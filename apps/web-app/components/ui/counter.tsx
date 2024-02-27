@@ -2,7 +2,7 @@
 
 import { Language } from '@/types/common';
 import { useState } from 'react';
-import { Button } from '@/ui';
+import { Button } from '@/ui/button';
 import { useClientTranslation } from '@/i18n/client';
 
 export const Counter = ({ lng }: Language) => {

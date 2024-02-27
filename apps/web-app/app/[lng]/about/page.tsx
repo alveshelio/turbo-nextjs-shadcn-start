@@ -1,4 +1,4 @@
-import { Counter } from '@/components/ui/counter/counter';
+import { Counter } from '@/components/ui/counter';
 import { LanguageParams } from '@/types/common';
 import { useServerTranslation } from '@/i18n/server';
 

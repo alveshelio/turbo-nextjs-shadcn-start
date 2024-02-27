@@ -2,7 +2,7 @@ import { useServerTranslation } from '@/i18n/server';
 import { LanguageParams } from '@/types/common';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '@/ui';
+import { Button } from '@/ui/button';
 
 export default async function Home({ params: { lng } }: LanguageParams) {
   const { t } = await useServerTranslation(lng, ['common', 'about']);
