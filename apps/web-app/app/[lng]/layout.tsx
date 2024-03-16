@@ -1,4 +1,5 @@
 import { languages } from '@/i18n/settings';
+import QueryProvider from '@/lib/query-provider';
 import { cn } from '@/lib/utils';
 import { LanguageParams } from '@/types/common';
 import type { Metadata } from 'next';
@@ -30,7 +31,7 @@ export default function RootLayout({
           inter.variable
         )}
       >
-        {children}
+        <QueryProvider>{children}</QueryProvider>
       </body>
     </html>
   );
