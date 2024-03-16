@@ -34,20 +34,23 @@ export const Form = ({ lng }: LanguageParams['params']) => {
     <form action={action as never} onSubmit={handleSubmit}>
       <div className="flex gap-4 flex-col">
         <Field name="firstName">
-          {(field) => (
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="firstName">{t('firstName')}</Label>
-              <Input
-                id={field.name}
-                name={field.name}
-                onBlur={field.handleBlur}
-                onChange={(e) => field.handleChange(e.target.value)}
-                type="text"
-                value={field.state.value}
-              />
-              <FieldInfo field={field} />
-            </div>
-          )}
+          {(field) => {
+            console.warn(`field state ${field.name}`, field);
+            return (
+              <div className="grid w-full max-w-sm items-center gap-1.5">
+                <Label htmlFor="firstName">{t('firstName')}</Label>
+                <Input
+                  id={field.name}
+                  name={field.name}
+                  onBlur={field.handleBlur}
+                  onChange={(e) => field.handleChange(e.target.value)}
+                  type="text"
+                  value={field.state.value}
+                />
+                <FieldInfo field={field} />
+              </div>
+            );
+          }}
         </Field>
         <Field name="lastName">
           {(field) => (
