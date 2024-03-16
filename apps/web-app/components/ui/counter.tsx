@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Button } from '@/ui/button';
 import { useClientTranslation } from '@/i18n/client';
 
-export const Counter = ({ lng }: Language) => {
+const Counter = ({ lng }: Language) => {
   const [count, setCount] = useState(0);
   const { t } = useClientTranslation(lng, 'common');
 
@@ -23,3 +23,5 @@ export const Counter = ({ lng }: Language) => {
     </div>
   );
 };
+
+export { Counter };
