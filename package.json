@@ -12,11 +12,10 @@
     "e2e:dev": "turbo run dev:test",
     "e2e:ci": "turbo run e2e:test"
   },
-  "dependencies": {},
   "devDependencies": {
     "@umontreal/eslint-config": "workspace:*",
     "prettier": "^3.1.1",
-    "turbo": "latest"
+    "turbo": "^1.12.4"
   },
   "engines": {
     "node": ">=20.0.0",
