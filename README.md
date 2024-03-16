@@ -1,18 +1,28 @@
-## What's inside?
+# UdeM starter
 
-This turborepo uses [PNPM](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
+This is a starter template for a [Nextjs](https://nextjs.org/) in a [Turborepo](https://turbo.build/) monorepo setup. 
 
 ### Apps and Packages
 
 - `@umontreal/web-app`: a [Next.js](https://nextjs.org/) app
-- `@umontreal/api`: an [Express](https://expressjs.com/) server
-- `@umontreal/ui`: ui: a React component library
+- `@umontreal/web-app-e2e`: End To End tests with [Playwright](https://playwright.dev/)
 - `@umontreal/eslint-config-custom`: `eslint` configurations for client side applications (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@umontreal/eslint-config-custom-server`: `eslint` configurations for server side applications (includes `eslint-config-next` and `eslint-config-prettier`)
-- `scripts`: Jest configurations
 - `@umontreal/typescript-config`: tsconfig.json's used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+
+## Web App (NextJs)
+NextJs is a React framework that enables server-side rendering for React based web applications.
+It is packed with the following packages:
+- [Shadcn UI](https://ui.shadcn.com/) a React component library
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Storybook](https://storybook.js.org/) for component development
+- [Vitest](https://vitest.dev/) for unit testing
+- [Tanstack Query](https://tanstack.com/query/latest/docs/framework/react/overview) for data fetching and mutations
+- [Tanstack React Table](https://tanstack.com/react-table/latest/docs/overview) for table rendering
+- [React Hook Form](https://react-hook-form.com/) for form handling
+- [Zod](https://zod.dev/) for data validation
+- [I18next](https://www.i18next.com/) for internationalization
 
 ### Docker
 
@@ -53,5 +63,5 @@ This Turborepo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
-- [Jest](https://jestjs.io) test runner for all things JavaScript
+- [Vitest](https://vitest.dev/) test runner for all things JavaScript
 - [Prettier](https://prettier.io) for code formatting
