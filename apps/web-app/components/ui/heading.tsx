@@ -4,10 +4,10 @@ import { HTMLAttributes, PropsWithChildren } from 'react';
 const headingVariants = cva('scroll-m-20 tracking-tight', {
   variants: {
     level: {
-      1: 'text-4xl lg:text-5xl0 font-extrabold',
-      2: 'text-3xl font-semibold first:mt-0',
-      3: 'text-2xl font-semibold',
-      4: 'text-xl font-semibold',
+      1: 'text-4xl lg:text-5xl0 font-extrabold mb-4',
+      2: 'text-3xl font-semibold first:mt-0 mb-3',
+      3: 'text-2xl font-semibold mb-2',
+      4: 'text-xl font-semibold mb-1',
     },
   },
   defaultVariants: {

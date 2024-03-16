@@ -15,7 +15,7 @@ export const ActionsButton = ({ children }: ActionsButtonProps) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="h-8 w-8 p-0">
+        <Button className="h-8 w-8 p-0" variant="ghost">
           <span className="sr-only">Open Menu</span>
           <DotsHorizontalIcon className="h-4 w-4" />
         </Button>

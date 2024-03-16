@@ -1,9 +1,9 @@
 'use client';
 
-import { Language } from '@/types/common';
-import { useState } from 'react';
-import { Button } from '@/ui/button';
 import { useClientTranslation } from '@/i18n/client';
+import { Language } from '@/types/common';
+import { Button } from '@/ui/button';
+import { useState } from 'react';
 
 const Counter = ({ lng }: Language) => {
   const [count, setCount] = useState(0);
@@ -14,10 +14,10 @@ const Counter = ({ lng }: Language) => {
       <h1>
         {t('count')} {count}
       </h1>
-      <Button variant="outline" size="icon" onClick={() => setCount(count + 1)}>
+      <Button onClick={() => setCount(count + 1)} size="icon" variant="outline">
         +
       </Button>
-      <Button variant="outline" size="icon" onClick={() => setCount(count - 1)}>
+      <Button onClick={() => setCount(count - 1)} size="icon" variant="outline">
         -
       </Button>
     </div>

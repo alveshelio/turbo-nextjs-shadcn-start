@@ -4,12 +4,12 @@ export const countriesMapper = (countries: FullCountry[]) =>
   countries.map(
     (country) =>
       ({
+        area: country.area,
+        capital: country.capital?.[0],
+        flag: country.flag,
         name: country.name.official,
+        population: country.population,
         region: country.region,
         subregion: country.subregion,
-        capital: country.capital?.[0],
-        population: country.population,
-        area: country.area,
-        flag: country.flag,
       }) satisfies Country
   );

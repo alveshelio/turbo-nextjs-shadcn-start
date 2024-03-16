@@ -1,13 +1,6 @@
 'use client';
 
 import {
-  ColumnDef,
-  flexRender,
-  getCoreRowModel,
-  useReactTable,
-} from '@tanstack/react-table';
-
-import {
   Table,
   TableBody,
   TableCell,
@@ -15,6 +8,12 @@ import {
   TableHeader,
   TableRow,
 } from '@/ui/table';
+import {
+  ColumnDef,
+  flexRender,
+  getCoreRowModel,
+  useReactTable,
+} from '@tanstack/react-table';
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -26,8 +25,8 @@ export const DataTable = <TData, TValue>({
   data,
 }: DataTableProps<TData, TValue>) => {
   const table = useReactTable({
-    data,
     columns,
+    data,
     getCoreRowModel: getCoreRowModel(),
   });
 
@@ -54,8 +53,8 @@ export const DataTable = <TData, TValue>({
           {table.getRowModel().rows?.length ? (
             table.getRowModel().rows.map((row) => (
               <TableRow
-                key={row.id}
                 data-state={row.getIsSelected() && 'selected'}
+                key={row.id}
               >
                 {row.getVisibleCells().map((cell) => (
                   <TableCell key={cell.id}>
@@ -66,7 +65,7 @@ export const DataTable = <TData, TValue>({
             ))
           ) : (
             <TableRow>
-              <TableCell colSpan={columns.length} className="h-24 text-center">
+              <TableCell className="h-24 text-center" colSpan={columns.length}>
                 No results.
               </TableCell>
             </TableRow>

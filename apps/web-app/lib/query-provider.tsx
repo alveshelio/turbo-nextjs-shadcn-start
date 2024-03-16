@@ -2,9 +2,9 @@
 
 // We can not useState or useRef in a server component, which is why we are
 // extracting this part out into its own file with 'use client' on top
-import { ReactNode, useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { ReactNode, useState } from 'react';
 
 export default function QueryProvider({ children }: { children: ReactNode }) {
   const [queryClient] = useState(
